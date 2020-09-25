@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Jogo da Memória
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content>
+  <ion-button expand="block" color="primary" href="home">Voltar</ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col [size]="4" *ngFor="let carta of cartas">
+      <ion-img  
+      src="/assets/{{carta.revealed? 'cards/' + carta.image:'castelo.png'}}"
+      class= "carta" (click)="escolherCarta(carta)"></ion-img>
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" *ngIf="numeroDeCartas" (click)="jogarDenovo()"> Repetir </ion-button>
+
+  </ion-toolbar>
+
+
+</ion-footer>

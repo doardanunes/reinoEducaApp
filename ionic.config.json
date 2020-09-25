@@ -1,0 +1,7 @@
+{
+  "name": "reinoEducaApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

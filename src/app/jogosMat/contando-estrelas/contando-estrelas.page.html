@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Contando Estrelas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Quantas estrelas temos aqui?</ion-card-title>
+    </ion-card-header>
+   <img src="assets/estrela1.jpg">
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button   expand="full" color="dark" (click)="naoE()">3</ion-button>
+      </ion-col>
+      <ion-col >
+        <ion-button expand="full" color="dark" (click)="naoE()">4</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-button  expand="full"  color="dark" (click)="escolhido()">6</ion-button>
+      </ion-col>
+      <ion-col >
+        <ion-button  expand="full"color="dark" (click)="naoE()">5</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</ion-content>

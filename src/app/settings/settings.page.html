@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configurações</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+
+      <ion-label position="stacked">Número de pares</ion-label>
+      <ion-range max="8" min="2"[(ngModel)]="settingsService.settings.numeroDeCartas">
+
+
+        <ion-icon name="bookmarks" mode="md" slot="start"></ion-icon>
+        <ion-icon name="bookmarks" mode="md" slot="end"></ion-icon>
+        <ion-chip slot="end">{{settingsService.settings.numeroDeCartas}}</ion-chip>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">
+        Atraso de Exibição
+      </ion-label>
+      <ion-range max="3000" min="250" [(ngModel)]="settingsService.settings.delay">
+        <ion-icon name="time" mode="md" slot="start" ></ion-icon>
+        <ion-icon name="time" mode="md" slot="end"></ion-icon>
+        <ion-chip slot="end">{{(settingsService.settings.delay / 1000).toFixed(2)}}</ion-chip>
+      </ion-range>
+    </ion-item>
+
+    <ion-radio-group [(ngModel)]="settingsService.settings.colNumbers">
+      <ion-list-header>
+        Número de colunas
+      </ion-list-header>
+      <ion-item>
+        <ion-radio  value="2" slot="start"> </ion-radio>
+        <ion-label>2 colunas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="3" slot="start"> </ion-radio>
+        <ion-label>3 colunas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="4"slot="start"> </ion-radio>
+        <ion-label>4 colunas</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

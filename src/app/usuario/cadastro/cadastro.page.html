@@ -1,0 +1,56 @@
+<ion-content  [fullscreen]="true">
+
+  <div class="ion-text-center">
+    <img src="assets/cast.png" alt="Castelo" class="Castelo">
+  </div>
+
+
+    <ion-item class="ion-text-center ion-button-light">
+      <ion-label>NOVO USUÁRIO</ion-label>
+    </ion-item>
+
+    <ion-item-divider color="tertiary">
+      <ion-label>
+        Digite seus dados
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input  type="text" placeholder="Digite seu nome"></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="none">
+      <ion-label  position="stacked">Data de Nascimento</ion-label>
+      <ion-datetime  displayFormat=" DD/MM/YYYY" placeholder="Selecione" cancelText="Cancelar" doneText="OK"></ion-datetime>
+    </ion-item>
+
+    
+
+    <ion-item lines="none">
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input  type="email" placeholder="Digite seu E-mail"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input  type="password" placeholder="Escolha uma senha"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Confirmar</ion-label>
+      <ion-input  type="password" placeholder="Confirme sua senha"></ion-input>
+    </ion-item>
+
+    <ion-item button detail="false" lines="none" class="ion-button-light ion-text-center" >
+      <ion-label>SALVAR</ion-label>
+    </ion-item>
+
+    <ion-button expand="full" color="tertiary" routerLink="/login">
+      VOLTAR
+    </ion-button>
+ 
+
+</ion-content>
+

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Jogos
+    </ion-title>
+    <ion-buttons slot="start"> 
+      <ion-menu-button menu="main-menu"> </ion-menu-button>
+      <ion-icon name="menu-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  class="ola">
+        <ion-button (click)="presentAlert('Você já conhece a história do Reino?','Há muitos anos alguém roubou as letras da bandeira do reino,
+        contamos com a sua ajuda para resgatá-las!')" color="medium">
+          <ion-icon slot="start" name="star"></ion-icon>
+            <p> Reino da Educação </p> 
+          <ion-icon slot="end" name="star"></ion-icon>
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  class="ola">
+        <ion-button color="danger">
+          <ion-icon  expand="full" slot="start" name="heart-circle-outline"></ion-icon>
+            <p> Jogos </p> 
+          <ion-icon slot="end" name="heart-circle-outline"></ion-icon>
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="jogosA"> 
+    <ion-button  routerLink="/log-index" color="success">  <p>Lógica</p> </ion-button>
+  </ion-grid>
+
+  <ion-grid class="jogosA"> 
+    <ion-button   routerLink="/port-index" color="primary"> <p>Português</p> </ion-button>
+  </ion-grid>
+
+  <ion-grid class="jogosA"> 
+    <ion-button routerLink="/mat-index"  color="warning"> <p>Matemática</p> </ion-button>
+  </ion-grid>
+
+  
+
+  
+</ion-content>
